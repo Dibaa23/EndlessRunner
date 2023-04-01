@@ -10,7 +10,6 @@ public class movement : MonoBehaviour
     public float gravityScale;
     public float fallingGravityScale;
     public int jumpMax;
-   // public ParticleSystem dust;
 
     // Start is called before the first frame update
     void Start()
@@ -34,12 +33,10 @@ public class movement : MonoBehaviour
 
         if (rb.velocity.y >= 0)
         {
-            //dust.Play();
             rb.gravityScale = gravityScale;
         }
         else if (rb.velocity.y < 0)
         {
-            //dust.Stop();
             rb.gravityScale = fallingGravityScale;
         }
     }

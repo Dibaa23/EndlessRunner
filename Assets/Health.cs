@@ -54,12 +54,12 @@ public class Health : MonoBehaviour
         if (col.gameObject.tag == "Spike")
         {
             getDamage = true;
-            health -= 25f;
+            health -= 15f;
         }
         if (col.gameObject.tag == "Lava")
         {
             getDamage = true;
-            health -= 10f;
+            health -= 5f;
         }
         if (col.gameObject.tag == "Health")
         {
